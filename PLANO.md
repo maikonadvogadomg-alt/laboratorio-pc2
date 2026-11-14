@@ -1,28 +1,29 @@
 # 📋 Plano do projeto: laboratorio-pc(2)
 
-_Gerado em 14/11/2026, 17:00:19 — sem IA, lendo os arquivos._
+_Gerado em 14/11/2026, 17:04:49 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
-| Arquivos | 90 |
-| Linhas | 18.680 |
-| Telas/páginas | 15 |
+| Arquivos | 135 |
+| Linhas | 20.341 |
+| Telas/páginas | 16 |
 | Rotas do backend | 0 |
 | Chamadas do app | 0 |
 | Tabelas do banco | 0 |
 | Variáveis de ambiente | 8 |
 
-**Linguagens:** JavaScript (51), HTML (15), Python (6), Outros (5), CSS (4), Imagem (3), JSON (3), Markdown (2), YAML (1)
+**Linguagens:** JavaScript (53), Imagem (33), HTML (16), JSON (6), Python (6), Outros (5), CSS (4), Imagem SVG (4), Markdown (4), YAML (2), Ícone (2)
 
 ## 💡 O que fazer (em ordem)
-1. 🧹 Tirar a Replit de 8 arquivo(s) (🏗️ Preparar → Fazer tudo)
+1. 🧹 Tirar a Replit de 10 arquivo(s) (🏗️ Preparar → Fazer tudo)
 2. 🔐 Criar um .env.example com: BASE_PATH, DADOS_EM, LOCALAPPDATA, PONTE_BASE, PONTE_CODIGO, PONTE_PORTA, PORT, TESTE_SAIR (os valores você coloca no servidor, nunca no código)
 3. 📝 Criar um README.md explicando como rodar
 
 ## 🚀 Por onde começa
 - `app/ferramentas/meu-chat/index.html`
 - `app/index.html`
+- `index.html`
 
 ## ⌨️ Comandos (package.json)
 | Pasta | Comando | O que roda |
@@ -48,6 +49,7 @@ _Gerado em 14/11/2026, 17:00:19 — sem IA, lendo os arquivos._
 | `app/ferramentas/replicador.html` | app/ferramentas/replicador.html |
 | `app/index.html` | app/index.html |
 | `electron/navegador.html` | electron/navegador.html |
+| `index.html` | index.html |
 
 ## 🖥️ Rotas do backend
 _Nenhum encontrado._
@@ -128,6 +130,8 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 - app/kits/kit-replit.cjs
 - app/kits/organizar.py
 - app/kits/servir.py
+- app/service-worker.js
+- service-worker.js
 
 ## 🔁 Roteiro para recriar fora da Replit
 1. Importar o projeto no Mini SK e tocar em 🏗️ Preparar → ✅ Fazer tudo (tira a Replit, cria os arquivos que faltam).
@@ -140,6 +144,7 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 ```
 ├─ 📁 .github/
 │  └─ 📁 workflows/
+│     ├─ apk.yml
 │     └─ programa-exe.yml
 ├─ 📁 app/
 │  ├─ 📁 css/
@@ -190,6 +195,24 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  │  ├─ preparador.html
 │  │  ├─ projeto-lab.html
 │  │  └─ replicador.html
+│  ├─ 📁 icons/
+│  │  ├─ apple-touch-icon.png
+│  │  ├─ icon-128.png
+│  │  ├─ icon-144.png
+│  │  ├─ icon-152.png
+│  │  ├─ icon-16.png
+│  │  ├─ icon-180.png
+│  │  ├─ icon-192.png
+│  │  ├─ icon-32.png
+│  │  ├─ icon-384.png
+│  │  ├─ icon-48.png
+│  │  ├─ icon-512.png
+│  │  ├─ icon-72.png
+│  │  ├─ icon-96.png
+│  │  ├─ icon.svg
+│  │  ├─ maskable-192.png
+│  │  ├─ maskable-512.png
+│  │  └─ maskable.svg
 │  ├─ 📁 js/
 │  │  ├─ 00-base.js
 │  │  ├─ 10-banco.js
@@ -229,8 +252,11 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  │  ├─ acorn.min.js
 │  │  └─ jszip.min.js
 │  ├─ cb1.png
+│  ├─ favicon.ico
 │  ├─ index.html
-│  └─ LEIA-ME.txt
+│  ├─ LEIA-ME.txt
+│  ├─ manifest.json
+│  └─ service-worker.js
 ├─ 📁 electron/
 │  ├─ instalar.nsh
 │  ├─ main.cjs
@@ -241,7 +267,32 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  ├─ saude.cjs
 │  ├─ terminal.cjs
 │  └─ voz.cjs
+├─ 📁 icons/
+│  ├─ apple-touch-icon.png
+│  ├─ icon-128.png
+│  ├─ icon-144.png
+│  ├─ icon-152.png
+│  ├─ icon-16.png
+│  ├─ icon-180.png
+│  ├─ icon-192.png
+│  ├─ icon-32.png
+│  ├─ icon-384.png
+│  ├─ icon-48.png
+│  ├─ icon-512.png
+│  ├─ icon-72.png
+│  ├─ icon-96.png
+│  ├─ icon.svg
+│  ├─ maskable-192.png
+│  ├─ maskable-512.png
+│  └─ maskable.svg
 ├─ .gitignore
+├─ apk.config.json
+├─ favicon.ico
+├─ index.html
 ├─ LEIA-ME.md
-└─ package.json
+├─ manifest.json
+├─ package.json
+├─ PLANO.md
+├─ RECEITA.md
+└─ service-worker.js
 ```

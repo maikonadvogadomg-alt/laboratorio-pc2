@@ -18,9 +18,9 @@
     "electron-builder": "25.1.8"
   },
   "build": {
-    "appId": "com.maikon.laboratorio.pc",
-    "productName": "Laboratório",
-    "executableName": "Laboratorio",
+    "appId": "com.maikon.laboratorio.pc.nteste11142005",
+    "productName": "Laboratório (teste 11142005)",
+    "executableName": "Laboratorio-nteste11142005",
     "directories": {
       "output": "release"
     },
@@ -42,13 +42,13 @@
       "perMachine": false,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Laboratório",
-      "artifactName": "Laboratorio-Instalar.exe",
+      "shortcutName": "Laboratório (teste 11142005)",
+      "artifactName": "Laboratorio-nteste11142005-Instalar.exe",
       "include": "electron/instalar.nsh"
     },
     "portable": {
-      "artifactName": "Laboratorio-sem-instalar.exe"
+      "artifactName": "Laboratorio-nteste11142005-sem-instalar.exe"
     }
   },
-  "portaDoPrograma": 7690
+  "portaDoPrograma": 8367
 }
