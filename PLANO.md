@@ -1,6 +1,6 @@
 # 📋 Plano do projeto: laboratorio-pc(2)
 
-_Gerado em 14/11/2026, 16:37:17 — sem IA, lendo os arquivos._
+_Gerado em 14/11/2026, 17:00:19 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
